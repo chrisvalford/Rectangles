@@ -16,6 +16,9 @@
 		2F108A6B26921C450044B4EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F108A6926921C450044B4EB /* LaunchScreen.storyboard */; };
 		2F108A7626921C460044B4EB /* RectanglesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F108A7526921C460044B4EB /* RectanglesTests.swift */; };
 		2F108A8126921C460044B4EB /* RectanglesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F108A8026921C460044B4EB /* RectanglesUITests.swift */; };
+		2F510E8F26921CD900DC39E7 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F510E8E26921CD900DC39E7 /* Shape.swift */; };
+		2F510E9126921D8000DC39E7 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F510E9026921D8000DC39E7 /* Rectangle.swift */; };
+		2F510E93269220FB00DC39E7 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F510E92269220FB00DC39E7 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		2F108A7C26921C460044B4EB /* RectanglesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RectanglesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F108A8026921C460044B4EB /* RectanglesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectanglesUITests.swift; sourceTree = "<group>"; };
 		2F108A8226921C460044B4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F510E8E26921CD900DC39E7 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		2F510E9026921D8000DC39E7 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		2F510E92269220FB00DC39E7 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +107,10 @@
 		2F108A5A26921C440044B4EB /* Rectangles */ = {
 			isa = PBXGroup;
 			children = (
+				2F510E942692238300DC39E7 /* Views */,
+				2F510E8D26921CC700DC39E7 /* Models */,
 				2F108A5B26921C440044B4EB /* AppDelegate.swift */,
 				2F108A5D26921C440044B4EB /* SceneDelegate.swift */,
-				2F108A5F26921C440044B4EB /* ViewController.swift */,
 				2F108A6126921C440044B4EB /* Main.storyboard */,
 				2F108A6726921C450044B4EB /* Assets.xcassets */,
 				2F108A6926921C450044B4EB /* LaunchScreen.storyboard */,
@@ -129,6 +136,24 @@
 				2F108A8226921C460044B4EB /* Info.plist */,
 			);
 			path = RectanglesUITests;
+			sourceTree = "<group>";
+		};
+		2F510E8D26921CC700DC39E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F510E8E26921CD900DC39E7 /* Shape.swift */,
+				2F510E9026921D8000DC39E7 /* Rectangle.swift */,
+				2F510E92269220FB00DC39E7 /* Color.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F510E942692238300DC39E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F108A5F26921C440044B4EB /* ViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F510E8F26921CD900DC39E7 /* Shape.swift in Sources */,
 				2F108A6026921C440044B4EB /* ViewController.swift in Sources */,
+				2F510E93269220FB00DC39E7 /* Color.swift in Sources */,
 				2F108A5C26921C440044B4EB /* AppDelegate.swift in Sources */,
+				2F510E9126921D8000DC39E7 /* Rectangle.swift in Sources */,
 				2F108A5E26921C440044B4EB /* SceneDelegate.swift in Sources */,
 				2F108A6626921C440044B4EB /* Rectangles.xcdatamodeld in Sources */,
 			);
