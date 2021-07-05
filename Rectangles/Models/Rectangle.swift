@@ -13,6 +13,7 @@ final class Rectangle: Shape {
     var height: CGFloat = 0
     
     var view: UIView?
+    var initialCenter = CGPoint()
     
     // Uses tap position, View will be centered on this
     init(tapX: CGFloat, tapY: CGFloat) {
@@ -35,22 +36,24 @@ final class Rectangle: Shape {
     }
     
     @IBAction func didPan(_ sender: UIPanGestureRecognizer) {
-        var originalPosition = self.view?.center
+        
         let translation = sender.translation(in: self.view)
-        //let velocityInView = sender.velocity(in: self.view)
         
         switch sender.state {
         case .began:
-            originalPosition = self.view?.center
+            initialCenter = self.view!.center
             break
+            
         case .changed:
-            self.view?.frame.origin = CGPoint(
-                x: originalPosition!.x - (self.view?.bounds.midX)! + translation.x,
-                y: originalPosition!.y  - (self.view?.bounds.midY)! + translation.y
+            self.view?.center = CGPoint(
+                x: initialCenter.x + translation.x,
+                y: initialCenter.y + translation.y
             )
             break
+            
         case .ended:
             break
+            
         default:
             break
         }
